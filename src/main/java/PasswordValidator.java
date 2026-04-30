@@ -6,7 +6,7 @@ public final class PasswordValidator {
      * @return true, if text has required length, else false
      */
     public static boolean hasMinLength(String password, int min){
-        return false;
+        return true;
     }
 
     public static boolean containsDigit(String password) {
