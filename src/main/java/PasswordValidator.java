@@ -40,7 +40,7 @@ public final class PasswordValidator {
      /** Test whether a text contains at least one uppercase and one lowercase letter.
      *
      * @param password text to check
-     * @return
+     * @return true, if text contains upper- and lowercase, else false
      */
     public static boolean containsUpperAndLower(String password) {
         char[] chars= password.toCharArray();
