@@ -89,6 +89,16 @@ class PasswordValidatorTest {
     }
 
     @Test
+    void containsDigit_shouldBeTrue_whenContainsOnlyDigits() {
+        String password= "012345678";
+        boolean expected= true;
+        boolean actual;
+
+        actual= PasswordValidator.containsDigit(password);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void containsUpperAndLower() {
     }
 
