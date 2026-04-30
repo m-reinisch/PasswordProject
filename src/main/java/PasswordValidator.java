@@ -16,6 +16,11 @@ public final class PasswordValidator {
         }
     }
 
+    /** Test whether a text contains at least one digit.
+     *
+     * @param password text to check
+     * @return true, if text contains at least one digit, else false
+     */
     public static boolean containsDigit(String password) {
         return false;
     }

@@ -59,7 +59,13 @@ class PasswordValidatorTest {
     }
 
     @Test
-    void containsDigit() {
+    void containsDigit_shouldBeFalse_whenContainsNoDigit() {
+        String password= "Abcdefgh";
+        boolean expected= false;
+        boolean actual;
+
+        actual= PasswordValidator.containsDigit(password);
+        assertEquals(expected, actual);
     }
 
     @Test
