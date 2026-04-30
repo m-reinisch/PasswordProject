@@ -65,8 +65,12 @@ public final class PasswordValidator {
         return false;
     }
 
-    public static boolean isCommonPassword(String password) // kleine interne Liste
-    {
+    /** Checks if text is in the common list.
+     *
+     * @param password text to check
+     * @return true, when text in list, else false
+     */
+    public static boolean isCommonPassword(String password){ // kleine interne Liste
         return false;
     }
 }

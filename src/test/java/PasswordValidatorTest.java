@@ -157,6 +157,12 @@ class PasswordValidatorTest {
     }
 
     @Test
-    void isCommonPassword() {
+    void isCommonPassword_shouldBeTrue_whenPasswort1() {
+        String password= "Passwort1";
+        boolean expected= true;
+        boolean actual;
+
+        actual= PasswordValidator.isCommonPassword(password);
+        assertEquals(expected, actual);
     }
 }
