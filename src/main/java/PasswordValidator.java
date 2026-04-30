@@ -1,6 +1,24 @@
 public final class PasswordValidator {
-    public static boolean hasMinLength(String password, int min);
-    public static boolean containsDigit(String password);
-    public static boolean containsUpperAndLower(String password);
-    public static boolean isCommonPassword(String password); // kleine interne Liste
+    /** Test whether a text has at least a certain length.
+     *
+     * @param password text to check
+     * @param min required length
+     * @return true, if text has required length, else false
+     */
+    public static boolean hasMinLength(String password, int min){
+        return false;
+    }
+
+    public static boolean containsDigit(String password) {
+        return false;
+    }
+
+    public static boolean containsUpperAndLower(String password) {
+        return false;
+    }
+
+    public static boolean isCommonPassword(String password) // kleine interne Liste
+    {
+        return false;
+    }
 }
