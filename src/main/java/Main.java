@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /** Main class of PasswordProject
  *
  *  starting point for password validation
@@ -5,7 +7,17 @@
  */
 public class Main {
     static void main() {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        String passwort;
+
+        System.out.println("Gib ein Passwort ein:");
+        passwort= scanner.nextLine();
+        scanner.close();
+        if (isValid(passwort)){
+            System.out.println("Dein Passwort ist gültig!");
+        } else {
+            System.out.println("Dein Passwort ist ungültig!");
+        }
     }
 
     /** Checks the password for validity.
