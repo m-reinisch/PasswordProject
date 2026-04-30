@@ -50,11 +50,13 @@ public final class PasswordValidator {
         for (char c:chars){
             if (Character.isLowerCase(c)){
                 lower= true;
+            } else if (Character.isUpperCase(c)){
+                upper= true;
             }
         }
-//        if (lower){
-//            return true;
-//        }
+        if (lower&&upper){
+            return true;
+        }
         return false;
     }
 
