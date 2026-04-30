@@ -6,7 +6,7 @@ public final class PasswordValidator {
      * @return true, if text has required length, else false
      */
     public static boolean hasMinLength(String password, int min){
-        if(password.length()==8) {
+        if(password.length()>=8) {
             return true;
         } else {
             return false;
