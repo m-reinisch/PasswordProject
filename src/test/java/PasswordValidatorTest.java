@@ -99,6 +99,16 @@ class PasswordValidatorTest {
     }
 
     @Test
+    void containsDigit_shouldBeFalse_whenNULL() {
+        String password= null;
+        boolean expected= false;
+        boolean actual;
+
+        actual= PasswordValidator.containsDigit(password);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void containsUpperAndLower() {
     }
 
