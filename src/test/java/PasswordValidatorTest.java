@@ -48,6 +48,17 @@ class PasswordValidatorTest {
     }
 
     @Test
+    void hasMinLength_shouldBeFalse_whenNULLand8() {
+        String pw= null;
+        int len= 8;
+        boolean expected= false;
+        boolean actual;
+
+        actual= PasswordValidator.hasMinLength(pw, len);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void containsDigit() {
     }
 
