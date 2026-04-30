@@ -146,6 +146,15 @@ class PasswordValidatorTest {
         actual= PasswordValidator.containsUpperAndLower(password);
         assertEquals(expected, actual);
     }
+    @Test
+    void containsUpperAndLower_shouldBeFalse_whenNULL() {
+        String password= null;
+        boolean expected= false;
+        boolean actual;
+
+        actual= PasswordValidator.containsUpperAndLower(password);
+        assertEquals(expected, actual);
+    }
 
     @Test
     void isCommonPassword() {
