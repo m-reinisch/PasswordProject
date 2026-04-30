@@ -52,6 +52,9 @@ public final class PasswordValidator {
                 lower= true;
             }
         }
+//        if (lower){
+//            return true;
+//        }
         return false;
     }
 
