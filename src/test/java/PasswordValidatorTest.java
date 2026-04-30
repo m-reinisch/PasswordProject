@@ -109,7 +109,13 @@ class PasswordValidatorTest {
     }
 
     @Test
-    void containsUpperAndLower() {
+    void containsUpperAndLower_shouldBeFalse_whenABCDEFG1() {
+        String password= "ABCDEFG1";
+        boolean expected= false;
+        boolean actual;
+
+        actual= PasswordValidator.containsUpperAndLower(password);
+        assertEquals(expected, actual);
     }
 
     @Test
