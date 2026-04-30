@@ -22,8 +22,13 @@ public final class PasswordValidator {
      * @return true, if text contains at least one digit, else false
      */
     public static boolean containsDigit(String password) {
-        char[] chars = password.toCharArray();
+        char[] chars;
 
+        if (password==null){
+            return false;
+        } else {
+            chars= password.toCharArray();
+        }
         for (char c:chars){
             if (Character.isDigit(c)){
                 return true;
