@@ -1,4 +1,10 @@
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
+
 public final class PasswordValidator {
+//    static final Set<String> common= new HashSet<>();
+
     /** Test whether a text has at least a certain length.
      *
      * @param password text to check
@@ -71,6 +77,14 @@ public final class PasswordValidator {
      * @return true, when text in list, else false
      */
     public static boolean isCommonPassword(String password){ // kleine interne Liste
+        String[] common= {"password", "Passwort1", "12345678", "Aa345678"};
+
+        for (String p:common){
+            if(password.equalsIgnoreCase(p)){
+                return true;
+            }
+
+        }
         return false;
     }
 }
