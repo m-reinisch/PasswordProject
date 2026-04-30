@@ -77,7 +77,7 @@ public final class PasswordValidator {
      * @return true, when text in list, else false
      */
     public static boolean isCommonPassword(String password){ // kleine interne Liste
-        String[] common= {"password", "Passwort1", "12345678", "Aa345678"};
+        String[] common= {"password", "Passwort1", "12345678", "Aa345678", "Passwort123"};
 
         for (String p:common){
             if(password.equalsIgnoreCase(p)){
