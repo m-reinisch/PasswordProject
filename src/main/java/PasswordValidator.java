@@ -43,10 +43,15 @@ public final class PasswordValidator {
      * @return true, if text contains upper- and lowercase, else false
      */
     public static boolean containsUpperAndLower(String password) {
-        char[] chars= password.toCharArray();
+        char[] chars;
         boolean upper= false;
         boolean lower= false;
 
+        if (password==null){
+            return false;
+        } else {
+            chars= password.toCharArray();
+        }
         for (char c:chars){
             if (Character.isLowerCase(c)){
                 lower= true;
